@@ -36,3 +36,31 @@ print("5. Ternary operator (conditional expression):")
 age = 20
 status = "Adult" if age >= 18 else "Minor"
 print(status)
+
+print("*" * 50)
+print("Logical Operators:")
+high_income = False
+good_credit = True
+student = False
+if (high_income or good_credit) and not student:
+    print("Eligible")
+else:
+    print("Not Eligible")
+
+print("*" * 50)
+print("Short-circuit Evaluations:")
+high_salary = False
+good_grade = True
+employee = True
+if high_salary and good_grade and not employee:
+    print("Eligible")
+else:
+    print("Not Eligible")
+
+print("*" * 50)
+print("Chaining Comparison Operators:")
+age = 22  # age should be between 18 and 55
+if 18 <= age < 65:
+    print("Eligible")
+else:
+    print("Not Eligible")
